@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Principal</title>
+</head>
+<body id="main">
+    <div class="container">
+    <h1 id="A">Mi familia</h1>
+    <img id="imagen" height="200px" src="https://image.freepik.com/vector-gratis/familia-feliz-dibujos-animados_29190-4822.jpg">
+    <h1 id="ache"></h1>
+    <button id="OP" type="button" onclick="siguiente()">Siguiente</button>
+    </div>
+    <script>
+        var UpdateImg = ["https://image.freepik.com/vector-gratis/familia-feliz-dibujos-animados_29190-4822.jpg","https://previews.123rf.com/images/ylivdesign/ylivdesign1605/ylivdesign160500244/56085314-icono-de-pap%C3%A1-en-estilo-de-dibujos-animados-sobre-un-fondo-blanco.jpg","https://media.istockphoto.com/vectors/mommy-wearing-short-sleeve-clothes-is-walking-vector-id896857912?b=1&k=20&m=896857912&s=170667a&w=0&h=H2Q8gkFxrR6FvK1Uk6V_QHQINu28ciEt6sju0V1xjRA=","https://st.depositphotos.com/2435397/4599/i/950/depositphotos_45998039-stock-photo-cartoon-child.jpg","https://us.123rf.com/450wm/yupiramos/yupiramos1811/yupiramos181112261/127564781-dise%C3%B1o-hermoso-del-ejemplo-del-vector-del-car%C3%A1cter-de-la-ni%C3%B1a.jpg?ver=6"];
+        var UpdateName = ["Libro","Papa","Mama","Yo","Mi hermana"];
+        var i = 0;
+        function siguiente(){
+            if(i == 5)
+            {
+                i=0
+            }
+            document.getElementById("imagen").src = UpdateImg[i];
+            document.getElementById("ache").innerHTML = UpdateName[i]; 
+            i++;
+        }
+    </script>
+</body>
+</html>
